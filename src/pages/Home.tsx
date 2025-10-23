@@ -12,7 +12,8 @@ const HomePage = () => {
     {
       icon: Home,
       title: "Mājīgas istabas",
-      description: "Komfortabli aprīkotas istabas ar tradicionālu latviešu atmosfēru",
+      description:
+        "Komfortabli aprīkotas istabas ar tradicionālu latviešu atmosfēru",
     },
     {
       icon: TreePine,
@@ -43,7 +44,7 @@ const HomePage = () => {
         >
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50" />
         </div>
-        
+
         <div className="relative z-10 text-center text-white px-4 animate-fade-in">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 drop-shadow-lg">
             Meža Māja
@@ -73,12 +74,14 @@ const HomePage = () => {
               Laipni lūgti mūsu viesu namā!
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              Esam priecīgi uzņemt jūs mūsu mājīgajā stūrītī, kas atrodas skaistā Latvijas lauku ainavā. 
-              Mūsu viesu nams piedāvā mierīgu atpūtu dabas klēpī, vienlaikus saglabājot visas mūsdienu ērtības.
+              Esam priecīgi uzņemt jūs mūsu mājīgajā stūrītī, kas atrodas
+              skaistā Latvijas lauku ainavā. Mūsu viesu nams piedāvā mierīgu
+              atpūtu dabas klēpī, vienlaikus saglabājot visas mūsdienu ērtības.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Baudiet Latvijas viesmīlību, tradicionālo atmosfēru un neaizmirstamus piedzīvojumus dabā. 
-              Meža Māja ir perfekta vieta, kur atslēgties no ikdienas steigas un atjaunoties.
+              Baudiet Latvijas viesmīlību, tradicionālo atmosfēru un
+              neaizmirstamus piedzīvojumus dabā. Meža Māja ir perfekta vieta,
+              kur atslēgties no ikdienas steigas un atjaunoties.
             </p>
           </div>
         </div>
@@ -99,7 +102,9 @@ const HomePage = () => {
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
                     <feature.icon className="w-8 h-8 text-primary" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2 text-foreground">{feature.title}</h3>
+                  <h3 className="text-xl font-bold mb-2 text-foreground">
+                    {feature.title}
+                  </h3>
                   <p className="text-muted-foreground">{feature.description}</p>
                 </CardContent>
               </Card>
@@ -120,33 +125,38 @@ const HomePage = () => {
             <p className="text-lg text-muted-foreground">
               Mājīgas istabas un skaista apkārtne jūsu atpūtai
             </p>
+            <p>Spiediet uz attēliem, lai apskatītu vairāk galerijā</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div className="relative h-80 rounded-lg overflow-hidden hover-lift group">
-              <img 
-                src={roomPine} 
-                alt="Priežu istaba" 
+              <img
+                src={roomPine}
+                alt="Priežu istaba"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
-                <p className="text-white text-xl font-bold p-4">Priežu istaba</p>
+                <p className="text-white text-xl font-bold p-4">
+                  Priežu istaba
+                </p>
               </div>
             </div>
             <div className="relative h-80 rounded-lg overflow-hidden hover-lift group">
-              <img 
-                src={roomLinden} 
-                alt="Liepas istaba" 
+              <img
+                src={roomLinden}
+                alt="Liepas istaba"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
-                <p className="text-white text-xl font-bold p-4">Liepas istaba</p>
+                <p className="text-white text-xl font-bold p-4">
+                  Liepas istaba
+                </p>
               </div>
             </div>
             <div className="relative h-80 rounded-lg overflow-hidden hover-lift group">
-              <img 
-                src={commonArea} 
-                alt="Kopīgā telpa" 
+              <img
+                src={commonArea}
+                alt="Kopīgā telpa"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
@@ -170,7 +180,8 @@ const HomePage = () => {
             Gatavi pieredzēt īsto latviešu viesmīlību?
           </h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-            Rezervējiet savu uzturēšanos jau šodien un izbaudiet neaizmirstamu atpūtu dabā!
+            Rezervējiet savu uzturēšanos jau šodien un izbaudiet neaizmirstamu
+            atpūtu dabā!
           </p>
           <Button asChild variant="secondary" size="lg">
             <Link to="/kontakti">Sazināties ar mums</Link>
